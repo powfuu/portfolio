@@ -13,29 +13,25 @@ const NavLinks = () => {
     <ul className={s.navBar}>
       <li>
         <NavLink to={routes.HOME} activeClassName={s.active} exact>
-          <AiOutlineHome />
-          Home
+        <i class='bx bxs-home'></i>
         </NavLink>
       </li>
 
       <li>
         <NavLink to={routes.ABOUT} activeClassName={s.active}>
-          <AiOutlineUser />
-          About
+        <i class='bx bxs-user'></i>
         </NavLink>
       </li>
 
       <li>
         <NavLink to={routes.PROJECTS} activeClassName={s.active}>
-          <AiOutlineFundProjectionScreen />
-          Projects
+        <i class='bx bxs-dashboard' ></i>
         </NavLink>
       </li>
 
       <li>
         <NavLink to={routes.RESUME} activeClassName={s.active}>
-          <CgFileDocument />
-          Resume
+        <i class='bx bxs-file-pdf'></i>
         </NavLink>
       </li>
     </ul>

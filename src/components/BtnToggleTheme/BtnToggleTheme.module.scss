@@ -1,5 +1,13 @@
-.toggleTheme {
+#toggleTheme {
   color: var(--toggle-theme);
-  width: 27px;
-  height: auto;
+  font-size: 1.7em !important;
+  margin-top:-.2em;
+  transition: .6s;
+  margin-left:1.5em;
+}
+@media screen and (max-width: 500px){
+  #toggleTheme{
+    margin-top:-.05em !important;
+    font-size: 2.3em !important;
+  }
 }

@@ -7,14 +7,14 @@ export const LIGHT_THEME_PARTICLES = {
     },
   },
   color: {
-    value: '#623686',
+    value: '#000',
   },
   opacity: {
     value: 1,
     random: true,
     anim: {
       enable: true,
-      speed: 1,
+      speed: 2,
       opacity_min: 0.1,
       sync: false,
     },

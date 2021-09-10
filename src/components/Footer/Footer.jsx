@@ -14,18 +14,17 @@ const Footer = () => {
     <div className={s.footer}>
       <div className={s.container}>
         <div className={s.copyright}>
-          <h3>Designed and Developed by Snaichuk Volodymyr</h3>
+        <h3><img src={require(`../../assets/logo.png`).default} id='logo'/></h3>
         </div>
 
         <div className={s.copyright}>
-          <h3>Copyright © {year} SV.dev</h3>
         </div>
 
-        <div className={s.body}>
+        <div className={s.body} style={{marginTop:'.85em'}}><br/>
           <ul className={s.socialIcons}>
             <li>
               <a
-                href="https://github.com/vsnaichuk"
+                href="https://github.com/powfuu/Coding-Art/blob/main/===%20Coding%20Art%20Services%20==="
                 target="_blank"
                 rel="noreferrer"
               >
@@ -34,25 +33,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://www.facebook.com/Snaychuk"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaFacebookSquare />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://t.me/snaichuk_v"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaTelegramPlane />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/volodymyr-snaichuk-74a389124/"
+                href="https://www.linkedin.com/in/everit-dietrich-3874b9215/"
                 target="_blank"
                 rel="noreferrer"
               >

@@ -26,9 +26,15 @@ body {
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 15px;
+  }
+  #logo2{
+    display:none !important;
+  }
+  #menu{
+    display:block !important;
   }
 }
 
@@ -88,16 +94,16 @@ fieldset{
 }
 
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: black;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: #666;
   border-radius: 12px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: #555;
   border-radius: 12px;
 }
 

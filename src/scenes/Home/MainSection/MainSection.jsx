@@ -1,40 +1,54 @@
 import s from './MainSection.module.scss';
-import homeMainIcon from '../../../assets/home-main.svg';
+import homeMainIcon from '../../../assets/home-main.gif';
 import Typewriter from '../../../components/UIElements/Typewriter/Typewriter';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const MainSection = () => {
+  useEffect(()=>{
+    AOS.init();
+    },[])
   return (
     <section className={s.content}>
-      <div className={s.header}>
-        <h2 style={{ paddingBottom: 15 }} className={s.title}>
+      <div  data-aos='zoom-in'  data-aos="fade-up"
+    data-aos-offset="0"
+    data-aos-delay="20"
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center">
+        <h2 style={{ paddingBottom:7}} className={s.title}>
           Hi There! <span className={s.wave}>👋🏻</span>
         </h2>
 
-        <h1 className={s.mainTitle}>
+        <h1 className={s.mainTitle} style={{marginBottom:'-.65em'}}>
           I'M
-          <strong className={s.mainName}> SNAICHUK VOLODYMYR</strong>
+          <strong className={s.mainName}> Everit Molero</strong>
         </h1>
 
         <div style={{ paddingTop: 50 }}>
           <Typewriter
             strings={[
-              'MERN Stack Developer',
-              'Continuously Learning',
-              'React Native Developer',
+              'Full-Stack Developer',
+              'Development Instructor',
+              'Founder at Coding Art',
             ]}
             wrapperClassName={s.typewriterWrapper}
             cursorClassName={s.typewriterCursor}
           />
         </div>
       </div>
-
-      <LazyLoadImage
-        alt="home-img"
-        effect="blur"
-        src={homeMainIcon}
-        wrapperClassName={s.homeMainIcon}
-      />
+      <img src='https://tecnoplanet.pe/wp-content/uploads/2019/09/8.gif'  data-aos="zoom-in"
+    data-aos-offset="0"
+    data-aos-delay="50"
+    data-aos-duration="500"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center" id='img-main'/>
+    
     </section>
   );
 };

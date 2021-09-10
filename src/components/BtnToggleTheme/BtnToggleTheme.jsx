@@ -9,8 +9,8 @@ const BtnToggleTheme = ({ className }) => {
 
   return (
     <Button addClass={className} onClick={toggleTheme}>
-      {dark && <ToggleLightIcon className={s.toggleTheme} />}
-      {!dark && <ToggleDarkIcon className={s.toggleTheme} />}
+      {dark && <i class='bx bx-moon' id={s.toggleTheme}></i>}
+      {!dark && <i class='bx bx-sun' id={s.toggleTheme}></i>}
     </Button>
   );
 };

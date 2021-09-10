@@ -4,33 +4,35 @@ import laptopImg from '../../assets/about-laptop.png';
 import AboutTextCard from './AboutTextCard/AboutTextCard';
 import TechSkills from './TechSkills/TechSkills';
 import GithubActivity from './GithubActivity/GithubActivity';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const About = () => {
+  useEffect(()=>{
+    AOS.init()
+  },[])
   return (
     <BaseLayout>
       <div className={s.content}>
-        <div className={s.about}>
+        <div className={s.about} data-aos='fade-right'>
           <div className={s.aboutDescription}>
             <h1 className={s.title}>
-              Know Who <b className={s.purple}>I'M</b>
+              Know About <b className={s.purple}>Me</b>
             </h1>
             <AboutTextCard />
           </div>
 
           <div className={s.aboutImg}>
-            <img src={laptopImg} alt="about" />
+            <img src='https://marketing.adrianhallberg.com/wp-content/uploads/2021/02/Benefits-Of-Local-SEO.gif' id='about-img' />
           </div>
         </div>
 
-        <h2 className={s.skills}>
-          Professional <b className={s.purple}>Skills</b>
+        <h2 className={s.skills} data-aos='zoom-in'>
+          Some of my professional <b className={s.purple}>Skills</b>
         </h2>
-        <TechSkills />
-
-        <h2 className={s.githubActivity}>
-          Days I <b className={s.purple}>Code</b>
-        </h2>
-        <GithubActivity />
+        <div data-aos='fade-left'>
+        <TechSkills/>
+        </div>
       </div>
     </BaseLayout>
   );
